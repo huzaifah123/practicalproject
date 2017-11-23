@@ -37,10 +37,10 @@ html, body{
 	font-family: 'Century Gothic',sans-serif;
 	border: 3px solid;
 	padding: 7px 13px;
-	font-weight: bold; 
+	font-weight: bold;
 }
 .content .btn:hover{
-	color: #2196f3;	
+	color: #2196f3;
 }
 p{
 	font-size: 160%;
