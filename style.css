@@ -3,6 +3,7 @@ html, body{
 	padding: 0;
 	width: 100%;
 	height: 100%;
+	background-image: url(https://wallpaperscraft.com/image/evening_table_dinner_restaurant_coast_look_fires_garland_48367_2048x1152.jpg);
 }
 .b1{
 	width: 100%;
@@ -94,4 +95,23 @@ p{
     text-align: left;
   }
 
+}
+
+.content-wrapper{
+	width: 80%;
+	margin: 0% 10% 10% 10%;
+}
+
+.text-wrapper{
+	width:100%;
+	position: relative;
+	margin-top:-40%;
+}
+
+.text-wrapper h1{
+	text-align: center;
+	color: #ffffff;
+	font-size: 10vw;
+	font-family: 'Permanent Marker', cursive;
+	margin: 0% 0% 0% 0%;
 }
