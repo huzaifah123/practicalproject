@@ -9,6 +9,30 @@ body, html{
   color:#666;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
 
 .pimg1, .pimg2, .pimg3{
   position:relative;
@@ -86,6 +110,7 @@ div.gallery {
     border: 1px solid #ccc;
     float: left;
     max-width: 450px;
+    align-content: center;
 }
 
 div.gallery:hover {
@@ -104,6 +129,7 @@ div.gallery img {
 
   article {
     min-width: 100%;
+
   }
 }
 
