@@ -75,7 +75,6 @@ nav{
   position: fixed;
   z-index: 1;
 
-
 }
 
 nav ul{
@@ -101,7 +100,9 @@ nav ul li a{
 }
 
 
- .pimg2, .pimg3{
+
+
+ .pimg1, .pimg2, .pimg3{
   position:relative;
   opacity:0.70;
   background-position:center;
@@ -178,17 +179,31 @@ div.gallery {
     border: 1px solid #ccc;
     float: left;
     max-width: 450px;
+    font-size: 15px;
     align-content: center;
+    opacity: 1;
+    transform: scale(1.0);
+    transition: all 500ms linear;
+    position: relative;
+    z-index: 1;
+    margin: 10px;
 }
 
 div.gallery:hover {
     border: 1px solid #777;
+    transition: all 200ms linear;
+    transform: scale(1.2);
+    opacity: 1;
+    z-index: 99;
 }
 
 div.gallery img {
     width: 100%;
     height: auto;
 }
+
+
+
 @media (max-width:568px){
   .gallery{
     width: 100vw;
@@ -340,6 +355,7 @@ body {font-family: Verdana,sans-serif;margin:0}
 video{
   position:absolute;
   width: 100%;
-
-
+}
+figure {
+  width: 250px;
 }
