@@ -1,70 +1,42 @@
-var Button = function () {
-   function Button($hero) {
-     _classCallCheck(this, Button);
+//this is where we apply opacity to the arrow
+$(window).scroll( function(){
 
-     this.$hero = $hero;
-     this.buttonIsAnimated = false;
+  //get scroll position
+  var topWindow = $(window).scrollTop();
+  //multipl by 1.5 so the arrow will become transparent half-way up the page
+  var topWindow = topWindow * 1.5;
 
-     this.heroMobileHeight();
-     this.autoScrollOffset = this.$hero.height();
+  //get height of window
+  var windowHeight = $(window).height();
 
-     this.createButton();
-     this.attachEvents();
-   }
+  //set position as percentage of how far the user has scrolled
+  var position = topWindow / windowHeight;
+  //invert the percentage
+  position = 1 - position;
 
-   _createClass(Button, [{
-     key: 'createButton',
-     value: function createButton() {
-       this.$button = $('<span class="js-btn-scroll"></span>');
-       this.$button.appendTo(this.$hero);
-     }
-   }, {
-     key: 'animateButton',
-     value: function animateButton() {
-       this.$button.toggleClass(animationClass, this.buttonIsAnimated);
-     }
-   }, {
-     key: 'scrollOn',
-     value: function scrollOn() {
-       var scrollPosition = $window.scrollTop();
+  //define arrow opacity as based on how far up the page the user has scrolled
+  //no scrolling = 1, half-way up the page = 0
+  $('.arrow-wrap').css('opacity', position);
 
-       if (scrollPosition > scrollOffset && !this.buttonIsAnimated) {
-         this.buttonIsAnimated = true;
-         this.animateButton();
-       } else if (scrollPosition < scrollOffset && this.buttonIsAnimated) {
-         this.buttonIsAnimated = false;
-         this.animateButton();
-       }
-     }
-   }, {
-     key: 'autoScroll',
-     value: function autoScroll() {
-       $scrollBody.animate({
-         scrollTop: this.autoScrollOffset
-       }, autoScrollDuration);
-     }
-   }, {
-     key: 'attachEvents',
-     value: function attachEvents() {
-       var _this = this;
+});
 
-       $window.on('scroll', _.throttle(this.scrollOn.bind(this), wait));
-       $window.on('resize', function () {
-         _this.heroMobileHeight();
-         _this.autoScrollOffset = _this.$hero.height();
-       });
-       this.$button.on('click', this.autoScroll.bind(this));
-     }
-   }, {
-     key: 'heroMobileHeight',
-     value: function heroMobileHeight() {
-       if (api.external.defineMobileBrowser.isNativeAndroid()) {
-         this.$hero.height($window.height() - 165);
-       } else if (api.external.defineMobileBrowser.isIPad() || api.external.defineMobileBrowser.isIPhone() || api.external.defineMobileBrowser.isChrome()) {
-         this.$hero.height($window.height() - 115);
-       }
-     }
-   }]);
 
-   return Button;
- }();
+
+
+
+
+//Code stolen from css-tricks for smooth scrolling:
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
