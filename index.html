@@ -211,14 +211,59 @@ the finest of North Western cuisine, try out our new steak dish, including t-bon
     </span>
   </div>
 </div>
+<div id="contact-form">
+	<div>
+		<h1>Provide your feedback!</h1>
+		<h4>Have a question or just want to get in touch? Let's chat.</h4>
+	</div>
+		<p id="failure">Oopsie...message not sent.</p>
+		<p id="success">Your message was sent successfully. Thank you!</p>
 
+		   <form method="post" action="/">
+			<div>
+		      <label for="name">
+		      	<span class="required">Name: *</span>
+		      	<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+		      </label>
+			</div>
+			<div>
+		      <label for="email">
+		      	<span class="required">Email: *</span>
+		      	<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+		      </label>
+			</div>
+			<div>
+		      <label for="subject">
+		      <span>Subject: </span>
+			      <select id="subject" name="subject" tabindex="4">
+			         <option value="hello">Do you have a question?</option>
+			         <option value="quote">What do you think of our website</option>
+               <option value="quote">Do you think Dave and Fania will like my website?</option>
+			         <option value="general">- Huzaifah Mansoor - </option>
+			      </select>
+		      </label>
+			</div>
+			<div>
+		      <label for="message">
+		      	<span class="required">Message: *</span>
+		      	<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea>
+		      </label>
+			</div>
+			<div>
+		      <button name="submit" type="submit" id="submit" >SEND</button>
+			</div>
+		   </form>
+
+	</div>
 <!---
 <video poster="poster.jpg" autoplay="true" loop>
   <source src="video/video.mp4" type="video/mp4">
     <source src="video/video.webm" type="video/webm">
 </video>
 ---->
+
 </main>
+
 <script src="javascript/nav.js"></script>
 </body>
 
