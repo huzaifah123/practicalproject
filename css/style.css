@@ -837,7 +837,7 @@ figure {
     font-weight: 400;
     line-height: 1.8em;
     color: #666;
-    background: red;
+    background: white;
   }
 
   .topnav {
@@ -1049,6 +1049,7 @@ figure {
     position: relative;
     z-index: 1;
     margin: 10px;
+
   }
 
   div.gallery:hover {
@@ -1082,6 +1083,7 @@ figure {
     float: left;
     max-width: 33.33%;
     padding: 20px;
+    padding-top: 5px;
     text-align: left;
   }
 
