@@ -401,7 +401,7 @@ body {
 
 
 video {
-  position: absolute;
+  position: relative;
   width: 100%;
 }
 
@@ -814,7 +814,7 @@ figure {
   }
 
   video {
-    position: absolute;
+    position: relative;
     width: 100%;
   }
 
@@ -868,6 +868,7 @@ figure {
 .topnav .icon {
   display: none;
 }
+
 
 
 @media screen and (max-width: 600px) {
@@ -964,7 +965,7 @@ figure {
     scroll-behavior: smooth;
   }
 
-  .pimg1, .pimg2, .pimg3 {
+  .pimg1, .pimg2, .pimg3, .pimg4 {
     position: relative;
     opacity: 0.70;
     background-position: center;
@@ -992,6 +993,11 @@ figure {
     background-image: url('../img/img4.jpg');
     min-height: 100%;
   }
+  .pimg4{
+    background-image: url('../img/contact.jpg');
+    min-height: 40%;
+
+  }
 
   .section {
     text-align: center;
@@ -1007,6 +1013,7 @@ figure {
     background-color: #282e34;
     color: #ddd;
   }
+
 
   .ptext {
     position: absolute;
@@ -1235,7 +1242,7 @@ figure {
   }
 
   video {
-    position: absolute;
+    position: relative;
     width: 100%;
   }
 
