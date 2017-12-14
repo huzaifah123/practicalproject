@@ -1,8 +1,5 @@
 /*FIRST BREAKPOINT (MOBILE) */
 @media (min-width: 300px){
-  body{
-    background-color: green;
-  }
 
 body, html {
   height: 100%;
@@ -136,7 +133,7 @@ main {
   scroll-behavior: smooth;
 }
 
-.pimg1, .pimg2, .pimg3 {
+.pimg1, .pimg2, .pimg3, .pimg4{
   position: relative;
   opacity: 0.70;
   background-position: center;
@@ -151,18 +148,23 @@ main {
 
 .pimg1 {
   background-image: url('../img/img1.jpg');
-  min-height: 100%;
+  min-height: 50%;
   opacity: 0.80;
 }
 
 .pimg2 {
   background-image: url('../img/img3.jpg');
-  min-height: 400px;
+  min-height: 200px;
 }
 
 .pimg3 {
   background-image: url('../img/img4.jpg');
-  min-height: 100%;
+  min-height: 50%;
+}
+
+.pimg4 {
+  background-image: url('../img/contact.jpg');
+  min-height: 30%;
 }
 
 .section {
@@ -186,7 +188,7 @@ main {
   width: 100%;
   text-align: center;
   color: #000;
-  font-size: 27px;
+  font-size: 22px;
   letter-spacing: 8px;
   text-transform: uppercase;
 }
@@ -194,7 +196,7 @@ main {
 .ptext .border {
   background-color: #111;
   color: #fff;
-  padding: 20px;
+  padding: 18px;
 }
 
 .ptext .border.trans {
@@ -212,7 +214,7 @@ div.gallery {
   text-align: center;
   border: 1px solid #ccc;
   float: left;
-  max-width: 450px;
+  max-width: 400px;
   font-size: 15px;
   align-content: center;
   opacity: 1;
@@ -407,6 +409,16 @@ video {
 
 figure {
   width: 250px;
+}
+@media only screen and (max-width: 580px) {
+ #contact-form{
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+ }
 }
 
 /*second breakpoint - tablet */
