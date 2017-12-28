@@ -1290,13 +1290,13 @@ input:required, textarea:required {
 
 }
 .footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
+   position: absolute;
+   bottom:-1000%;
    width: 100%;
-   background-color: white;
+   background-color: #c6c6c6;
    color: black;
    text-align: center;
+   padding: 2%;
    z-index: 20px;
 }
 .fa {
