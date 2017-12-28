@@ -922,6 +922,7 @@
   .section-dark {
     background-color: #282e34;
     color: #ddd;
+    min-height: 50%;
   }
   .ptext {
     position: absolute;
@@ -1162,8 +1163,8 @@ h4 {
   left: 50%;
   position: absolute;
   margin-top: 20px;
-  margin-left: -260px;
-  margin-bottom: 110px;
+  margin-left: -230px;
+  margin-bottom: 160px;
   border-radius: 7px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -1266,14 +1267,14 @@ input:required, textarea:required {
   float:left;
 }
 .flip3D > .front{
-  position:absolute;
+  position:relative;
   transform: perspective(600px) rotateY(0deg);
   background: #FC0; width:240px; height: 200px; border-radius: 7px;
   backface-visibility: hidden;
   transition: transform .5s linear 0s;
 }
 .flip3D > .back{
-  position:absolute;
+  position:relative;
   transform: perspective(600px) rotateY(180deg);
   background: #80BFFF; width:240px; height: 200px; border-radius: 7px;
   backface-visibility: hidden;
@@ -1292,7 +1293,81 @@ input:required, textarea:required {
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: red;
-   color: white;
+   background-color: white;
+   color: black;
    text-align: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 8px 5px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  width: 45px;
+    height: 45px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFF;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  width: 45px;
+    height: 45px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+  width: 45px;
+    height: 45px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  width: 45px;
+    height: 45px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  width: 45px;
+    height: 45px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  width: 45px;
+    height: 45px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    color: rgba(255, 255, 255, 0.8);
 }
